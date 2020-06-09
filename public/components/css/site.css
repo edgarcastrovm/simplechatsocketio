@@ -1,0 +1,64 @@
+html,
+body{
+    height: 100%;
+    width: 100%;
+    margin: auto 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+/* 
+.container-chat{
+    height: 100%;
+    width: 100%;
+    margin: auto 0;
+    padding: 3px;
+    box-shadow: 12px 2px 2px whitesmoke inset ;
+}
+#chat-content{
+    width: 100%;
+    height: 80%;
+    border: solid 1px whitesmoke;
+}
+#chat-output{
+    width: 100%;
+    height: 60%;
+    border: solid 1px whitesmoke;
+
+}
+#chat-output p{
+    padding: 10px 0;
+    margin: 0 10px;
+    color: darkcyan;
+}
+#chat-actions{
+    width: 100%;
+    height: 10%;
+    border: solid 1px whitesmoke;
+
+}
+
+#chat-actions p{
+    padding: 10px 0;
+    margin: 0 10px;
+    color: darkcyan;
+}
+#chat-controls{
+    width: 100%;
+    height: 30%;
+    border: solid 1px whitesmoke;
+
+}
+
+ */
+
+ #username ,#message, #send {
+    border: solid 1px whitesmoke ;
+}
+#message {
+    width: 100%;
+}
+#send{
+    width: 100%;
+}

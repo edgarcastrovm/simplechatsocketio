@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Web soket.io</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/components/css/site.css" rel="stylesheet">
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <nav class="row">
+                <div class="col m-4">
+                    <h4>
+                        Chat con SocketIO 
+                    </h4>
+                </div>
+            </nav>
+        </header>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col col-sm-5 col-md-4 col-lg-5 col-xl-3">
+                    <div class=" card">
+                        <div class="card-header">
+                            <input class="bg-transparent input" type="hidden" id="username" value="{{chat_user_id}}" />
+                            Biembenido <span>{{chat_user.name}}</span>
+                            <p>Participantes</p>
+                        </div>
+                        <div id="chat-users" class="card-body">
+                            <div class="card" style="width: 100%;">
+                                <div class="row no-gutters">
+                                  <div class="col">
+                                    <img src="/components/images/user_none.png" class="card-img img-thumbnail" alt="Imagen participante" style="height: 64px;width: 64px;">
+                                  </div>
+                                  <div class="col-8">
+                                    <div class="card-body">
+                                      <span> Nombre participante </span>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-7 col-md-8 col-lg-7 col-xl-9">
+                    <div class="card" style="min-height: 700px; max-height: 700px; ">
+                        <div class="card-header bg-primary text-white">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="/components/images/logo.png" class="card-img img-thumbnail" alt="Imagen participante" style="height: 54px;width: 64px;">
+                                </div>
+                                <div class="col-10">
+                                    <div id="chat-actions" class="border-primary">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body text-success">
+                            <div id="chat-content" class="border-dark">
+                                <div id="chat-output" style="max-height:590px ;min-height:590px ; overflow: auto;">
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <div class="card-footer bg-primary ">
+                            <div id="chat-controls" class="row">
+                             <div class="col">
+                                 <textarea type="text" id="message" cols="30"></textarea>
+                             </div>
+                            <div class="col-sm-2">     
+                                <button id="send" class="btn btn-light">Enviar</button>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <aside>
+
+        </aside>
+        <script src="/components/js/site.js"></script>
+    </body>
+</html>
