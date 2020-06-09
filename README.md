@@ -1,6 +1,6 @@
 ## Instalación
 ```bash
-#Conar el repositorio
+#Clonar el repositorio
 git@gitlab.com:edgar.castro/simplechatsocketio.git
 
 #Ingresar al directorio del proyecto
